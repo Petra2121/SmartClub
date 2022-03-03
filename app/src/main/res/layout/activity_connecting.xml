@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backg"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/connectingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:visibility="gone"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/workingTimeAbout"
+            android:layout_width="335dp"
+            android:layout_height="47dp"
+            android:fontFamily="@font/lato"
+            android:text="@string/working_time_is_about_to_start"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toTopOf="@+id/connectingTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.313"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.654" />
+
+        <TextView
+            android:id="@+id/connectingTxt"
+            android:layout_width="194dp"
+            android:layout_height="62dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/lato"
+
+            android:text="@string/connecting_to_club360"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/imageWifi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageWifi"
+            android:layout_width="97dp"
+            android:layout_height="89dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/closedDoorTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_wifi"
+            android:contentDescription="@string/wifi_image" />
+
+        <TextView
+            android:id="@+id/closedDoorTxt"
+            android:layout_width="177dp"
+            android:layout_height="55dp"
+
+            android:layout_marginBottom="8dp"
+
+            android:fontFamily="@font/lato"
+            android:text="@string/the_door_is_closed"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/imageDoorClosed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageDoorClosed"
+            android:layout_width="wrap_content"
+            android:layout_height="89dp"
+            android:layout_marginBottom="160dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_close_door"
+            android:contentDescription="@string/closed_door_image" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/connectedLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/workingTimeStart"
+            android:layout_width="360dp"
+            android:layout_height="46dp"
+            android:fontFamily="@font/lato"
+            android:text="@string/working_time_started_at"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toTopOf="@+id/timeStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.902" />
+
+        <TextView
+            android:id="@+id/timeStart"
+            android:layout_width="360dp"
+            android:layout_height="46dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/lato"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="30sp"
+
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/connectedTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/connectedTxt"
+            android:layout_width="177dp"
+            android:layout_height="54dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/lato"
+            android:text="@string/connected_to_club360"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toTopOf="@+id/imageWifi2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageWifi2"
+            android:layout_width="97dp"
+            android:layout_height="89dp"
+            android:layout_marginBottom="28dp"
+
+            app:layout_constraintBottom_toTopOf="@+id/openedDoorTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_wifi"
+            android:contentDescription="@string/wifi_image_2" />
+
+        <TextView
+            android:id="@+id/openedDoorTxt"
+            android:layout_width="176dp"
+            android:layout_height="44dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/lato"
+            android:text="@string/the_door_is_open"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/imageDoorOpen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageDoorOpen"
+            android:layout_width="97dp"
+            android:layout_height="89dp"
+            android:layout_marginBottom="116dp"
+            android:clickable="true"
+
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_open_door"
+            android:contentDescription="@string/open_door_image" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/disconnectedLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        android:visibility="visible"
+
+        app:layout_constraintBottom_toTopOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/workingTimeEnd"
+            android:layout_width="360dp"
+            android:layout_height="46dp"
+            android:fontFamily="@font/lato"
+            android:text="@string/working_time_ended_at"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toTopOf="@+id/timeEnd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.858" />
+
+        <TextView
+            android:id="@+id/timeEnd"
+            android:layout_width="360dp"
+            android:layout_height="46dp"
+            android:fontFamily="@font/lato"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toTopOf="@+id/disconnectedTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.878" />
+
+        <TextView
+            android:id="@+id/disconnectedTxt"
+            android:layout_width="177dp"
+            android:layout_height="54dp"
+            android:layout_marginBottom="28dp"
+            android:fontFamily="@font/lato"
+            android:text="@string/disconnected_from_club360"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toTopOf="@+id/imageWifi3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageWifi3"
+            android:layout_width="97dp"
+            android:layout_height="89dp"
+            android:layout_marginBottom="36dp"
+
+            app:layout_constraintBottom_toTopOf="@+id/closedDoorTxt2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_no_wifi"
+            android:contentDescription="@string/wifi_image_3" />
+
+        <TextView
+            android:id="@+id/closedDoorTxt2"
+            android:layout_width="176dp"
+            android:layout_height="44dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/lato"
+            android:text="@string/the_door_is_closed"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/imageDoorClosed2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageDoorClosed2"
+            android:layout_width="97dp"
+            android:layout_height="89dp"
+            android:layout_marginBottom="148dp"
+
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_close_door"
+            android:contentDescription="@string/closed_door_image_2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/clubName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/lato"
+        android:letterSpacing="0.12"
+        android:text="@string/club_360"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="42dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="4dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toEndOf="@+id/clubName"
+        app:srcCompat="@drawable/ic_disco"
+        android:contentDescription="@string/_360_club_logo" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

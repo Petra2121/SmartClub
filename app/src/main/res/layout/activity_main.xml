@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/club"
+        android:layout_width="151dp"
+        android:layout_height="51dp"
+
+        android:fontFamily="@font/lato"
+        android:letterSpacing="0.13"
+        android:shadowColor="@color/text_shadow_white"
+        android:shadowDx="1"
+
+        android:shadowDy="1"
+        android:shadowRadius="10"
+        android:text="@string/club"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/club360"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.914" />
+
+    <TextView
+        android:id="@+id/club360"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="56dp"
+        android:fontFamily="@font/lato"
+        android:letterSpacing="0.13"
+        android:shadowColor="@color/text_shadow_white"
+
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="10"
+        android:text="@string/_360"
+        android:textAlignment="center"
+
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/login_btn"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="100dp"
+
+        android:layout_marginBottom="108dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/lato"
+        android:letterSpacing="0.05"
+        android:paddingHorizontal="35dp"
+        android:paddingVertical="13dp"
+
+        android:text="@string/log_in"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/copyright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="48dp"
+        android:fontFamily="@font/lato"
+        android:text="@string/copyright_2022_club360"
+
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/copyright2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/lato"
+        android:text="@string/all_rights_reserved"
+        android:textColor="@color/white"
+
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/copyright"
+        app:layout_constraintVertical_bias="0.272" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

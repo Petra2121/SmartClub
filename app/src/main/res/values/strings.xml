@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">SmartClub</string>
+    <string name="authentication_success">Authentication successful</string>
+    <string name="authentication_not_successful">Authentication was not successful, try again:</string>
+    <string name="working_time_is_about_to_start">Working time is about to start...</string>
+    <string name="connecting_to_club360">Connecting to Club360...</string>
+    <string name="the_door_is_closed_2">The door is closed</string>
+    <string name="wifi_image">WIFI image</string>
+    <string name="working_time_started_at">Working time started at:</string>
+    <string name="connected_to_club360">Connected to Club360!</string>
+    <string name="the_door_is_open">The door is open</string>
+    <string name="working_time_ended_at">Working time ended at:</string>
+    <string name="disconnected_from_club360">Disconnected from Club360!</string>
+    <string name="the_door_is_closed">The door is closed</string>
+    <string name="club_360_1">CLUB 360</string>
+    <string name="_360_club_logo">360 club logo</string>
+    <string name="wifi_image_2">Wifi image</string>
+    <string name="closed_door_image">Closed door image</string>
+    <string name="open_door_image">Open door image</string>
+    <string name="wifi_image_3">Wifi image 3</string>
+    <string name="closed_door_image_2">Closed door image 2</string>
+    <string name="club">CLUB</string>
+    <string name="_360">360</string>
+    <string name="log_in">LOG IN</string>
+    <string name="copyright_2022_club360">Copyright © 2022 Club360.</string>
+    <string name="all_rights_reserved">All rights reserved.</string>
+    <string name="welcome">Welcome!</string>
+    <string name="user_id">User ID:</string>
+    <string name="done">✓</string>
+    <string name="authentication_successful">Authentication successful</string>
+    <string name="club_360">CLUB 360</string>
+    <string name="success_image">Success image</string>
+    <string name="club_360_logo">Club 360 logo</string>
+    <string name="_12345">12345</string>
+</resources>

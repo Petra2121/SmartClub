@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/backg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:fontFamily="@font/lato"
+        android:letterSpacing="0.05"
+        android:text="@string/welcome"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/useridtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato"
+        android:letterSpacing="0.05"
+        android:text="@string/user_id"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editUserID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.204"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome"
+        app:layout_constraintVertical_bias="0.886" />
+
+    <EditText
+        android:id="@+id/editUserID"
+        android:layout_width="270dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="296dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:maxLength="5"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+
+        android:textColorHint="@color/hint"
+        android:autofillHints="12345"
+        android:hint="@string/_12345"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/round_button"
+
+        android:fontFamily="@font/lato"
+        android:paddingHorizontal="35dp"
+        android:paddingVertical="13dp"
+        android:text="@string/done"
+        android:textAllCaps="true"
+
+        android:textColor="@color/black"
+        android:textSize="22sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.725"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editUserID"
+        app:layout_constraintVertical_bias="0.264" />
+
+    <ImageButton
+        android:id="@+id/success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.688"
+        app:srcCompat="@drawable/ic_done"
+        android:contentDescription="@string/success_image" />
+
+
+    <TextView
+        android:id="@+id/successTxt"
+        android:layout_width="275dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/lato"
+        android:text="@string/authentication_successful"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+
+        android:visibility="invisible"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/success"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome"
+        app:layout_constraintVertical_bias="0.183" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/lato"
+        android:letterSpacing="0.12"
+        android:text="@string/club_360"
+
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:layout_width="42dp"
+        android:layout_height="43dp"
+
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:srcCompat="@drawable/ic_disco"
+        android:contentDescription="@string/club_360_logo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
